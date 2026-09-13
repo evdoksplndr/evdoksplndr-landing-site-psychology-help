@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админ-панель</title>
-    <!-- Подключаем современный шрифт Inter и иконки Lucide -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -231,7 +230,6 @@
             transform: translateY(0);
         }
 
-        /* Список кликабельных элементов базы */
         .bd_div {
             display: flex;
             flex-direction: column;
@@ -304,7 +302,6 @@
             color: var(--primary);
         }
 
-        /* Toast Уведомления */
         .toast {
             position: fixed;
             bottom: 24px;
@@ -334,7 +331,6 @@
 <body>
 
     <div class="admin-wrapper">
-        <!-- Сайдбар -->
         <aside class="sidebar">
             <div class="sidebar-header">Меню управления</div>
             <ul>
@@ -346,7 +342,6 @@
             </ul>
         </aside>
 
-        <!-- Основная панель -->
         <main class="admin-card">
             
             <section class="section-block" id="editpanel">
@@ -454,14 +449,12 @@
         </main> 
     </div> 
     
-    <!-- Toast Уведомление -->
     <div id="toast" class="toast">
         <i data-lucide="check-circle" style="width: 18px;"></i>
         <span>Данные подставлены в форму!</span>
     </div>
 
     <script>
-        // Инициализация Lucide иконок
         lucide.createIcons();
 
         const clickableElements = document.querySelectorAll('.clickable');
@@ -486,7 +479,6 @@
                 
                 showToast();
 
-                // Плавный скролл к верхней форме
                 document.getElementById('editpanel').scrollIntoView({ behavior: 'smooth' });
             });
         });
