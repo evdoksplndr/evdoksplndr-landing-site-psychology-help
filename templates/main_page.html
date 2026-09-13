@@ -147,7 +147,6 @@
       font-size: 0.9rem;
     }
 
-    /* Hero */
     .hero {
       padding: 80px 0 100px;
       position: relative;
@@ -264,7 +263,6 @@
       color: var(--accent);
     }
 
-    /* Sections common */
     section {
       padding: 90px 0;
     }
@@ -331,7 +329,6 @@
       font-size: 0.95rem;
     }
 
-    /* Services */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -365,7 +362,6 @@
       font-size: 0.95rem;
     }
 
-    /* How it works */
     .steps {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -402,7 +398,6 @@
       font-size: 0.9rem;
     }
 
-    /* Pricing */
     .pricing {
       background: var(--surface);
     }
@@ -497,7 +492,6 @@
       background: #f0f0f0;
     }
 
-    /* Testimonials */
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -553,7 +547,6 @@
       color: var(--muted);
     }
 
-    /* CTA */
     .cta {
       background: linear-gradient(135deg, #2f6b5e 0%, #1e4a40 100%);
       color: #fff;
@@ -585,7 +578,6 @@
       transform: translateY(-1px);
     }
 
-    /* FAQ */
     .faq-list {
       max-width: 720px;
       margin: 0 auto;
@@ -741,7 +733,6 @@
       margin-top: 14px;
     }
 
-    /* Footer */
     footer {
       padding: 48px 0 32px;
       border-top: 1px solid var(--border);
@@ -774,7 +765,6 @@
       text-align: center;
     }
 
-    /* Mobile */
     .menu-btn {
       display: none;
       background: none;
@@ -841,7 +831,6 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <div class="container nav">
       <a href="#" class="logo">{{ doc['header']['logo'] }}<span>.</span></a>
@@ -857,7 +846,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -913,7 +901,6 @@
     </div>
   </section>
 
-  <!-- Benefits -->
   <section class="benefits" id="benefits">
     <div class="container">
       <div class="section-header">
@@ -955,7 +942,6 @@
     </div>
   </section>
 
-  <!-- Services -->
   <section id="services">
     <div class="container">
       <div class="section-header">
@@ -1009,7 +995,6 @@
     </div>
   </section>
 
-  <!-- How it works -->
   <section style="background: var(--surface);">
     <div class="container">
       <div class="section-header">
@@ -1041,7 +1026,6 @@
     </div>
   </section>
 
-  <!-- Pricing -->
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header">
@@ -1090,7 +1074,6 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
   <section id="reviews">
     <div class="container">
       <div class="section-header">
@@ -1135,7 +1118,6 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <div class="container">
     <div class="cta">
       <h2>{{ doc['cta']['title'] }}</h2>
@@ -1144,7 +1126,6 @@
     </div>
   </div>
 
-  <!-- FAQ -->
   <section id="faq">
     <div class="container">
       <div class="section-header">
@@ -1201,7 +1182,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container contact-grid">
       <div class="contact-info">
@@ -1258,7 +1238,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -1275,7 +1254,7 @@
   </footer>
 
   <script>
-    // FAQ accordion
+    
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
